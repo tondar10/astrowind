@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: PttGroup
+  site: 'https://pttgroup.ir'
   base: '/'
   trailingSlash: false
 
