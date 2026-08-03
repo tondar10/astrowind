@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'شرکت پرتو توان تدبیر | احداث و توسعه نیروگاه‌های خورشیدی',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,77 +25,70 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'مشاوره و درخواست احداث',
+        href: '#contact',
+        icon: 'tabler:sun',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'خدمات ما', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1200&q=80', alt: 'نیروگاه خورشیدی پرتو توان تدبیر' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro v6</span> + Tailwind CSS
+      تأمین انرژی پاک و پایدار با <span class="text-accent dark:text-white highlight">پرتو توان تدبیر</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro v6 +
-        Tailwind CSS v4.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages & Blogs.
+      مجری تخصصی مشاوره، طراحی، احداث و نگهداری نیروگاه‌های خورشیدی صنعتی، خانگی و کشاورزی با بالاترین بازدهی و ضمانت رسمی.
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+  <Note title="ماموریت ما:" description="ارائه راهکارهای نوین انرژی تجدیدپذیر، کاهش هزینه‌های برق و حرکت به سوی آینده‌ای پاک." />
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023, 2024 and 2025."
+    tagline="خدمات اصلی"
+    title="خدمات جامع شرکت پرتو توان تدبیر"
+    subtitle="از مطالعات امکان‌سنجی اولیه تا نصب، اتصال به شبکه سراسری و پشتیبانی دائمی نیروگاه‌های خورشیدی."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'نیروگاه‌های خورشیدی صنعتی',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility. Now powered by Tailwind CSS v4.',
-        icon: 'tabler:brand-tailwind',
+          'احداث نیروگاه‌های خورشیدی بزرگ‌مقیاس برای صنایع و کارخانجات جهت رفع ناترازی برق و تامین انرژی پایدار.',
+        icon: 'tabler:building-factory-2',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'سیستم‌های خورشیدی خانگی (On-Grid)',
         description:
-          'Widgets made with Tailwind CSS v4 ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'طراحی و نصب سیستم‌های پشت‌بامی جهت فروش تضمینی برق به وزارت نیرو و درآمدزایی مطمئن ۲۰ ساله.',
+        icon: 'tabler:home-bolt',
       },
       {
-        title: 'Best Practices',
+        title: 'سیستم‌های مستقل از شبکه (Off-Grid)',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'تامین برق با بانک باتری پیشرفته برای مزارع، ویلاها و مناطقی که به شبکه سراسری برق دسترسی ندارند.',
+        icon: 'tabler:battery-charging',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'طراحی مهندسی و مشاوره (EPC)',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'شبیه‌سازی تخصصی تابش، محاسبه دقیق بازدهی و اجرای کامل پروژه‌ها بر اساس استانداردهای بین‌المللی.',
+        icon: 'tabler:solar-panel-2',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'تامین تجهیزات اورجینال',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'عرضه مستقیم بهترین پنل‌های خورشیدی، اینورترها و استراکچرهای مقاوم با گارانتی معتبر.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'پایش، سرویس و نگهداری (O&M)',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'بازرسی‌های دوره‌ای، شستشوی تخصصی پنل‌ها و مانیتورینگ آنلاین جهت حفظ حداکثر راندمان نیروگاه.',
+        icon: 'tabler:tools',
       },
     ]}
   />
@@ -104,109 +97,34 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="چرا پرتو توان تدبیر؟"
+    title="مزایای احداث نیروگاه خورشیدی با ما"
     items={[
       {
-        title: 'Built on top of Astro v6',
+        title: 'تیم مهندسی باسابقه و متخصص',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'بهره‌گیری از مهندسان مجرب در حوزه برق و انرژی‌های تجدیدپذیر با سابقه اجرای پروژه‌های ملی.',
       },
       {
-        title: 'Styled using Tailwind CSS v4',
+        title: 'تجهیزات با گارانتی طولانی‌مدت',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'استفاده از پنل‌ها و اینورترهای دارای راندمان بالا و گارانتی راندمان ۲۵ ساله.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'بازگشت سریع سرمایه',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'محاسبه دقیق توجیه اقتصادی و کاهش دوره بازگشت سرمایه با بهینه‌سازی طراحی فنی.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2070&q=80',
+      alt: 'مهندسی نیروگاه خورشیدی',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">سرمایه‌گذاری مطمئن و سبز</h3>
+      با احداث نیروگاه خورشیدی، علاوه بر کاهش هزینه‌ها، سهم مهمی در حفاظت از محیط زیست داشته باشید.
     </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -216,92 +134,62 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="مراحل اجرای پروژه نیروگاه خورشیدی شما"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'گام ۱: <span class="font-medium">مشاوره و بازدید میدانی</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          'بررسی موقعیت مکانی، میزان تابش خورشید، زاویه نصب و سنجش زیرساخت‌های الکتریکی محل پروژه.',
+        icon: 'tabler:map-pin',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'گام ۲: <span class="font-medium">طراحی فنی و طرح توجیهی</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          'شبیه‌سازی نرم‌افزاری، انتخاب دقیق تجهیزات و ارائه برآورد مالی و بازگشت سرمایه.',
+        icon: 'tabler:report-analytics',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'گام ۳: <span class="font-medium">نصب و راه‌اندازی</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'مونتاژ استراکچر، نصب پنل‌ها، کابل‌کشی و اتصال اینورترها با رعایت کامل نکات ایمنی.',
+        icon: 'tabler:tools',
       },
       {
-        title: 'Ready!',
+        title: 'تحویل و اتصال به شبکه!',
         icon: 'tabler:check',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: 'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=1000&q=80',
+      alt: 'مراحل نصب نیروگاه خورشیدی',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS v4"
-    tagline="Components"
+    title="تجهیزات و راهکارهای خورشیدی"
+    subtitle="ارائه بهترین قطعات و سیستم‌های استاندارد صنعت انرژی خورشیدی"
+    tagline="تجهیزات"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        title: 'پنل‌های خورشیدی',
+        description: 'تامین انواع پنل‌های مونوکریستال و تایپ N با راندمان فوق‌العاده بالا.',
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+        title: 'اینورترهای خورشیدی',
+        description: 'اینورترهای متصل به شبکه (On-Grid) و هیبرید از برندهای معتبر جهانی.',
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
+        title: 'سازه‌ها و استراکچر',
+        description: 'سازه‌های گالوانیزه گرم مقاوم در برابر بادهای شدید و شرایط آب و هوایی سخت.',
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
+        title: 'باتری‌های ذخیره‌سازی',
+        description: 'باتری‌های لیتیومی و ژل با طول عمر بالا برای سیستم‌های مستقل از شبکه.',
         icon: 'flat-color-icons:database',
       },
     ]}
@@ -314,50 +202,37 @@ const metadata = {
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro v6 + Tailwind CSS v4.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    title="آخرین اخبار و مقالات آموزشی"
+    information="جدیدترین اخبار حوزه انرژی‌های تجدیدپذیر، راهنماهای کاربردی احداث نیروگاه و تحلیل‌های اقتصادی صنعت خورشیدی را مطالعه کنید."
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
+    title="سوالات متداول"
+    subtitle="پاسخ به برخی از رایج‌ترین سوالات شما درباره احداث نیروگاه خورشیدی"
+    tagline="سوالات"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'طول عمر یک نیروگاه خورشیدی چقدر است؟',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'پنل‌های خورشیدی استاندارد معمولاً دارای گارانتی راندمان ۲۵ ساله هستند و نیروگاه می‌تواند بیش از ۳۰ سال با کارایی مطلوب انرژی تولید کند.',
       },
       {
-        title: 'What do I need to start?',
+        title: 'قرارداد فروش تضمینی برق چیست؟',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'وزارت نیرو برق تولیدی نیروگاه‌های خورشیدی شما را بر اساس قراردادی ۲۰ ساله به صورت تضمینی خرید می‌کند و درآمد ماهانه برای شما ایجاد خواهد شد.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'دوره بازگشت سرمایه در نیروگاه خورشیدی چقدر است؟',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'بسته به نوع نیروگاه (خانگی یا صنعتی) و نرخ‌های خریدهای تضمینی، معمولاً بازگشت سرمایه بین ۳ تا ۵ سال زمان می‌برد.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'آیا نیروگاه خورشیدی در روزهای ابری هم برق تولید می‌کند؟',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'بله، پنل‌های خورشیدی با دریافت نور غیرمستقیم محیطی نیز فعال هستند، اما میزان تولید برق نسبت به روزهای آفتابی کاهش می‌یابد.',
       },
     ]}
   />
@@ -366,33 +241,32 @@ const metadata = {
 
   <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'مگاوات ظرفیت نصب‌شده', amount: '+۵۰' },
+      { title: 'پروژه‌های اجراشده', amount: '+۱۲۰' },
+      { title: 'رضایت مشتریان', amount: '۱۰۰٪' },
+      { title: 'کاهش کربن (تن)', amount: '+۸۰K' },
     ]}
   />
 
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
+    id="contact"
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'تماس با کارشناسان',
+        href: 'tel:02112345678',
+        icon: 'tabler:phone-call',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      آینده انرژی خود را همین امروز با پرتو توان تدبیر بسازید
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      برای برآورد هزینه احداث نیروگاه و دریافت مشاوره تخصصی رایگان با تیم ما در ارتباط باشید.
     </Fragment>
   </CallToAction>
 </Layout>
