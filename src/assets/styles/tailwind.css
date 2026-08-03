@@ -116,3 +116,21 @@
 .dd *:first-child {
   margin-top: 0;
 }
+/* مشخص‌تر کردن هاور منوی اصلی */
+header nav a:hover {
+  color: #d97706 !important; /* رنگ نارنجی/طلایی خورشیدی */
+  font-weight: 600 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+/* هاور زیرمنوها */
+header nav ul ul a:hover {
+  background-color: #fef3c7 !important; /* پس‌زمینه لایت زرد/نارنجی */
+  color: #b45309 !important;
+  padding-right: 1rem !important; /* انیمیشن جابه‌جایی کوچک به سمت راست */
+}
+
+.dark header nav ul ul a:hover {
+  background-color: #374151 !important;
+  color: #fbbf24 !important;
+}
