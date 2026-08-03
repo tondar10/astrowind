@@ -118,6 +118,9 @@ export const footerData = {
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: `
-    © ۱۴۰۵ کلیه حقوق برای <a class="text-blue-600 underline dark:text-muted" href="#">شرکت پرتو توان تدبیر</a> محفوظ است.
+    <div class="flex items-center gap-2">
+      <span class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-amber-500 text-white font-bold text-xs shadow-sm">☀️</span>
+      <span>© ۱۴۰۵ کلیه حقوق برای <a class="text-amber-600 font-bold hover:underline dark:text-amber-400" href="#">شرکت پرتو توان تدبیر</a> محفوظ است.</span>
+    </div>
   `,
 };
