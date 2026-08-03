@@ -3,10 +3,14 @@ import { SITE } from 'astrowind:config';
 import { Icon } from 'astro-icon/components';
 ---
 
-<span
-  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white flex items-center gap-2"
->
-  <!-- آیکون خورشید و انرژی پاک برای شرکت پرتو توان تدبیر -->
-  <Icon name="tabler:sun-electricity" class="w-8 h-8 text-amber-500 inline-block" />
-  {SITE?.name || 'پرتو توان تدبیر'}
+<span class="self-center flex items-center gap-2.5 text-xl md:text-2xl font-black tracking-tight text-gray-900 whitespace-nowrap dark:text-white group">
+  <!-- آیکون مدرن خورشید و انرژی با افکت نور -->
+  <div class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 via-orange-500 to-yellow-400 p-2 shadow-lg shadow-orange-500/30 group-hover:scale-105 transition-transform duration-300">
+    <Icon name="tabler:solar-panel-2" class="w-6 h-6 text-white stroke-[2]" />
+  </div>
+  
+  <div class="flex flex-col leading-none">
+    <span class="text-amber-600 dark:text-amber-400 font-extrabold text-lg">پرتو توان تدبیر</span>
+    <span class="text-[10px] text-gray-500 dark:text-gray-400 font-medium tracking-widest uppercase mt-1">PTT Group</span>
+  </div>
 </span>
